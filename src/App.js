@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CreateEmployeeForm from "./components/CreateEmployeeForm";
+import SearchEmployeeForm from "./components/SearchEmployeeForm";
+
+import Typography from "@mui/material/Typography";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Typography variant="h2">Employee Dashboard App</Typography>
+
+      <CreateEmployeeForm />
+
+      <SearchEmployeeForm />
     </div>
   );
 }
